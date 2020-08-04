@@ -110,12 +110,12 @@ class App extends React.Component {
             <div className="col">
               <NavBar />
               <input placeholder="Search" onChange={this.handleTyping}></input>
-              <table class="table">
+              <table className="table">
                 <thead>
                   <tr>
                     <th
                       className="text-center" scope="col">Image</th>
-                    <th className="text-center" onClick={this.handleOrder} scope="col"><button className="btn" class="hoverable">Name</button></th>
+                    <th className="text-center" onClick={this.handleOrder} scope="col"><button className="btn" className="hoverable">Name</button></th>
                     <th className="text-center" scope="col">Email</th>
                     <th className="text-center" scope="col">Phone</th>
                     <th className="text-center" scope="col">DOB</th>
