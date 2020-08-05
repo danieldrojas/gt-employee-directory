@@ -1,6 +1,7 @@
 import React, { Component, useState } from 'react';
 import NavBar from './components/NavBar/NavBar';
 import axios from 'axios';
+import API from './utils/API';
 
 
 
@@ -72,9 +73,11 @@ class App extends React.Component {
     console.log("Thhis is the sorttt   :", sort)
   }
 
+
+
+
   getEmployees = (query) => {
-    const BASEURL = "https://randomuser.me/api/?results=10"
-    axios.get(BASEURL)
+    API.getEmployees()
       .then((response) => {
         var cleanedEmployees = []
         var apiEmployees = response.data.results
